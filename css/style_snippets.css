@@ -1,0 +1,118 @@
+
+/*====================================================
+  ==    CSS CONTENEDOR PRINCIPAL MENU ACORDEONS     ==
+  ==================================================== */
+
+  .menusnippets
+  {
+  	width: 100%;
+  	max-width: 90%;
+  	background: transparent; 
+  	margin:0px auto 20px;
+  	-webkit-border-radius:4px;
+  	-moz-border-radius:4px;
+  	-ms-border-radius:4px;
+  	-o-border-radius:4px;
+  	border-radius:4px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  /*ANIMACION A OPCION*/
+  .menusnippets .opcion
+  {
+    background-color: #fff;
+  	 cursor: pointer;
+  	  color: #004260;
+  	  padding: 15px 15px 15px 15px;
+  	  font-size: 15px;
+  	  font-weight: bold;
+  	  /*border-bottom: 1px groove #ccc;*/
+  	  position: relative;
+  	  -webkit-transition-: all 0.4s ease;
+  	  -moz-transition-: all 0.4s ease;
+  	  -ms-transition-: all 0.4s ease;
+  	  -o-transition-: all 0.4s ease;
+  	  transition-: all 0.4s ease;
+  	  display: block;
+  	 width: 100%;
+     
+
+  }
+  .menusnippets .opcion span
+  {
+  	margin-left: 100px;
+  }
+
+  .menusnippets  li:last-child .opcion
+  {
+  	border-bottom: 0px;
+  }
+  .subopcion
+  {
+  	display: none;
+  	background: #004260; 
+    font-size: 14px;
+  }
+
+   .subopcion li
+   {
+   	border-bottom: 1px solid #4b4a5e;
+     position: relative;
+   }
+    .subopcion a
+    {
+    	display: block;
+    	text-decoration: none;
+    	color: #fff;
+    	padding: 15px;
+    	padding-left: 50px;
+    	-webkit-transition: all 0.25s ease;
+    	-o-transition: all 0.25s ease;
+    	transition: all 0.25s ease;
+    }
+    .subopcion a:hover {
+    background: #000;
+    color: #FFF;
+    }
+
+
+    /******************/
+    .menusnippets li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.menusnippets li i.icon-circle-down {
+	right: 12px;
+	left: 80px;
+	font-size: 16px;
+	color: #004260;
+
+
+}
+
+.menusnippets li.open .opcion {
+	 color: red;
+	 font-weight: bold;
+
+}
+
+.menusnippets li.open i {
+	color: #004260;
+}
+.menusnippets li.open i.icon-circle-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	 color: red;
+}
